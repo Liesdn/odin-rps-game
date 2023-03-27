@@ -1,0 +1,95 @@
+/* help beat the kid
+immagine del bimbo che chiede di giocare, 
+immagini input dei 3 simboli
+altro html
+quando il gioco finisce popup/modal con
+immagine del vincitore e bottone per giocare di nuovo
+in fondo link solito*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-size: 30px;
+}
+
+#choice {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.cards {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.cardimg {
+    height: 200px;
+    width: auto;
+    padding: 10px;
+}
+
+
+/* The Modal (background) */
+.modalW, .modalL {
+    display: none; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+#link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.link {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.gitimg {
+    max-height: 30px;
+    padding: 3px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}

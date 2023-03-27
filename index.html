@@ -3,13 +3,54 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+
+        <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
         <title>Rock Paper Scissors</title>
     </head>
     <body>
-        <input type="button" value="Rock"></input>
-        <input type="button" value="Paper"></input>
-        <input type="button" value="Scissors"></input>
-        <div id="result"></div>
-        <script src="javascript.js"></script>
+        <div class="header">
+            <h2>Help Rohan defeat the kid!</h2>
+            <img class="headimg" src="rpsstart.png">
+            <p id="choice">What should Rohan play?</p>
+        </div>
+        <!--<div class="buttons">
+            <input type="button" value="Rock"></input>
+            <input type="button" value="Paper"></input>
+            <input type="button" value="Scissors"></input>
+        </div>-->
+        <div class="cards">
+            <div class="cardimg" id="Rock">
+                <img src="rock.png" alt="Rock" class="image">
+            </div>
+            <div class="cardimg" id="Paper">
+                <img src="paper.png" alt="Paper" class="image">
+            </div>
+            <div class="cardimg" id="Scissors" >
+                <img src="scissors.png" alt="Scissors" class="image">
+            </div>
+        </div>
+        <div id="result"><br><br>Score</div>
+        <div id="modalW" class="modalW">
+            <div class="modal-content modal-dialog modal-sm">
+                <img src="rohanwins.png" alt="Rohan won!">
+                <p>You helped Rohan win!</p>
+                <button class="resetBtn" type="button" onClick="window.location.reload()">Play again?</button>
+            </div>
+        </div>
+
+        <div id="modalL" class="modalL">
+            <div class="modal-content modal-dialog modal-sm">
+                <img src="kidwins.png" alt="Rohan lost!">
+                <p>Rohan lost...</p>
+                <button class="resetBtn" type="button" onClick="window.location.reload()">Play again?</button>
+            </div>
+        </div>
+        <div class="link">
+            <a id="link" href="https://github.com/Liesdn/odin-sketch" target="_blank">The Lies/dn Project 2023<img class="gitimg" src="github-mark.svg"></a>
+        </div>
+        <script src="main.js"></script>
     </body>
 </html>
