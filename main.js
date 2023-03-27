@@ -14,6 +14,8 @@ function openModalW() {
 function openModalL() {
     modalL.style.display = 'block';
 }
+
+// The buttons are of a previous and simpler version of the game, i keep these as comments for reference
 // const buttons = document.querySelectorAll('input');
 
 // function disableButtons() {
@@ -31,9 +33,9 @@ function playRound(playerChoice) {
     let compChoice = getCompChoice();
     let result = '';
     if (playerChoice == compChoice) {
-        result = (`It's a tie. You and the Computer both chose ${playerChoice}.` + 
+        result = (`It's a tie. Rohan and the kid both chose ${playerChoice}.` + 
         `<br><br>Score
-        <br>You: ${playerScore}, Computer: ${compScore}`);
+        <br>Rohan: ${playerScore}, kid: ${compScore}`);
         
     } else if (
         (playerChoice == 'Rock' && compChoice == 'Scissors') ||
@@ -41,9 +43,9 @@ function playRound(playerChoice) {
         (playerChoice == 'Paper' && compChoice == 'Rock')
     ) {
         playerScore++;
-        result = (`You win! ${playerChoice} beats ${compChoice}!` +
+        result = (`Rohan wins! ${playerChoice} beats ${compChoice}!` +
         `<br><br>Score
-        <br>You: ${playerScore}, Computer: ${compScore}`);
+        <br>Rohan: ${playerScore}, kid: ${compScore}`);
         if (playerScore == 5) {
             openModalW();
             //result += `<br><br>You won the game!`;
@@ -51,9 +53,9 @@ function playRound(playerChoice) {
         }
     } else {
         compScore++;
-        result = (`You lose! ${compChoice} beats ${playerChoice}!` +
+        result = (`Rohan loses! ${compChoice} beats ${playerChoice}!` +
         `<br><br>Score
-        <br>You: ${playerScore}, Computer: ${compScore}`);
+        <br>Rohan: ${playerScore}, kid: ${compScore}`);
         if (compScore == 5) {
             openModalL();
             //result += `<br><br>You lost the game...`;
