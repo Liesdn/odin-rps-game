@@ -92,6 +92,7 @@ img {
 
 .gitimg {
     max-height: 30px;
+    max-width: 30px;
     padding: 3px;
     margin-bottom: 5px;
     margin-left: 5px;
